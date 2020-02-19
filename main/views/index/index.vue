@@ -1,16 +1,15 @@
 <template>
   <div class="index">
-    <img :src="introductionImg" alt="业务中台" />
+    <img :src="introduction" alt="业务中台" />
   </div>
 </template>
 
 <script lang="ts">
 import {Vue, Component} from 'vue-property-decorator';
-import introductionImg from './images/introduction.png';
-
+import introduction from './images/introduction.png';
 @Component({})
 export default class Index extends Vue {
-  introductionImg = introductionImg;
+  introduction  = introduction
 }
 </script>
 

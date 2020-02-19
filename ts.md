@@ -9,21 +9,14 @@
 
 修改nuxt.config.js文件后缀为 nuxt.config.ts
 
-### 引入nuxt问题？
+### 引入ts问题
 
-1.为什么引入？
 
-2.解决什么问题？
-
-3.带来什么收获？
-
-4.为项目带来什么好处？
-
-5.运行、打包
-
-6.tslint是否需要加？
-
-7.vue-property-decorator 与@vue/composition-api 对比？
+1.tslint是否需要加？
+ 
+  暂定
+  
+2.vue-property-decorator 与@vue/composition-api 对比？
 
 
 >区别：
@@ -32,7 +25,7 @@
  
     [vue-property-decorator](https://github.com/kaorun343/vue-property-decorator)社区出品
 
-    vue-class-component官方出品
+    [vue-class-component](https://class-component.vuejs.org/)官方出品
 
 - 2.内部区别
    
@@ -45,10 +38,6 @@
 - 3.使用vuex
   
   1.如果引入了vue-property-decorator，但使用vuex，必须引用vuex-class
-
-- 4.如果以后3.0呢？或者更长远的呢？
-
-
 
 vue-property-decorator 优点
 - 装饰器
@@ -69,3 +58,14 @@ vue-property-decorator 优点
 
 
 综合以上描述,故使用vue-property-decorator
+
+
+### 注意事项：
+
+1.typscript中是无法识别非代码资源
+ 
+ 参考连接：[typscript中是无法识别非代码资源](https://www.cnblogs.com/chen-cong/p/10445635.html)
+
+ 解决方法： declare module 'xxx'
+
+2.当引入外部文件时，记得声明文件。以防出现错误

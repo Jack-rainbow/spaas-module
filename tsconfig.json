@@ -6,6 +6,9 @@
         "lib": [
           "esnext",
           "esnext.asynciterable",
+          "es5",
+          "es6",
+          "es7",
           "dom"
         ],
         "esModuleInterop": true,
@@ -13,18 +16,20 @@
         "sourceMap": true,
         "strict": true,
         "noEmit": true,
-        "baseUrl": ".",
+        "baseUrl": "./main",
+        "experimentalDecorators":true,
+        "noImplicitAny": false,
         "paths": {
           "~/*": [
             "./*"
           ],
-          "@/*": [
-            "./*"
-          ]
         },
         "types": [
           "@types/node",
-          "@nuxt/types"
+          "@nuxt/types",
+          "webpack-env",
+          "mocha",
+          "chai"
         ]
       },
       "exclude": [

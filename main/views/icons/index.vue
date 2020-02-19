@@ -43,11 +43,11 @@
 </template>
 
 <script lang="ts">
-import {Vue, Component} from 'vue-property-decorator';
-import clipboard from '@/utils/clipboard';
+import {Tabs, TabPane} from '@femessage/element-ui';
+import {Vue, Component,Emit} from 'vue-property-decorator';
+import clipboard from '~/utils/clipboard';
 import svgIcons from './svg-icons';
 import elementIcons from './element-icons';
-import {Tabs, TabPane} from '@femessage/element-ui';
 
 @Component({
   [Tabs.name]: Tabs,

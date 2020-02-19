@@ -2,8 +2,8 @@
  * @Description: nuxt 配置文件
  * @Author: barret
  * @Date: 2019-08-10 07:57:24
- * @LastEditTime : 2020-02-19 02:57:19
- * @LastEditors  : Please set LastEditors
+ * @LastEditTime: 2020-02-19 11:51:03
+ * @LastEditors: Please set LastEditors
  */
 require('dotenv').config();
 const proxyConfig = require('../proxy.config.ts');
